@@ -1,9 +1,10 @@
 import React from 'react'
-import HelloWorld from './lib'
+import { Table } from './lib'
+import { mockEmployees, tableHeaders } from './data/mockData'
 
 const App = () => {
   return (
-    <HelloWorld greetee={'Universe'} />
+    <Table data={mockEmployees} tableHeaders={tableHeaders}/>
   )
 }
 
