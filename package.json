@@ -9,6 +9,10 @@
     "dist",
     "README.md"
   ],
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/thaisrodez/paginated-table-react"
+  },
   "main": "./dist/paginated-table-react-pkg.umd.js",
   "module": "./dist/paginated-table-react-pkg.es.js",
   "exports": {
