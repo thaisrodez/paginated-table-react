@@ -5,7 +5,7 @@ import {
   getPageRange,
   getSlicedData,
   searchThroughObject,
-} from "../utils/utils";
+} from "../../utils/utils";
 
 /**
  * Custom hook to handle table actions

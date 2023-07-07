@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { RowsPerPage } from './displayEntries'
 import { SearchEntries } from './searchEntries'
 import { Table } from './table'
-import { useTable } from '../../hooks/useTable'
+import { useTable } from '../hooks/useTable'
 import { Pagination } from './pagination'
 import { DisplayedRows } from './displayedRows'
 import PropTypes from 'prop-types';
