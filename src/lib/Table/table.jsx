@@ -77,7 +77,7 @@ export function Table({
 Table.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object),
   tableHeaders: PropTypes.arrayOf(PropTypes.object),
-  sorting: PropTypes.oneOf('asc', 'desc', 'none'),
+  sorting: PropTypes.oneOf(['asc', 'desc', 'none']),
   setSorting: PropTypes.func,
   handleAscSorting: PropTypes.func,
   handleDescSorting: PropTypes.func,
