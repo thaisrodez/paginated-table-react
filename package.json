@@ -1,6 +1,6 @@
 {
   "name": "paginated-table-react-pkg",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "React paginated table with search and sorting",
   "license": "MIT",
   "author": "Thais de Rodez",
