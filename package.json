@@ -1,17 +1,21 @@
 {
   "name": "paginated-table-react-pkg",
-  "version": "0.0.4",
-  "description": "React paginated table",
+  "version": "0.0.5",
+  "description": "React paginated table with search and sorting",
   "license": "MIT",
   "author": "Thais de Rodez",
-  "keywords": [],
+  "keywords": [
+    "table",
+    "react",
+    "paginated"
+  ],
   "files": [
     "dist",
     "README.md"
   ],
   "repository": {
-  "type": "git",
-  "url": "https://github.com/thaisrodez/paginated-table-react"
+    "type": "git",
+    "url": "https://github.com/thaisrodez/paginated-table-react"
   },
   "main": "./dist/paginated-table-react-pkg.umd.js",
   "module": "./dist/paginated-table-react-pkg.es.js",
