@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 /**
  * React component indicating the extend of data displayed
@@ -14,12 +14,14 @@ import PropTypes from 'prop-types';
 export function DisplayedRows({ indexes, totalOfRows }) {
   return (
     <div>
-      <p>{`Showing ${indexes.firstIndex + 1} to ${indexes.lastIndex < totalOfRows ? indexes.lastIndex : totalOfRows} of ${totalOfRows} entries`}</p>
+      <p>{`Showing ${indexes.firstIndex + 1} to ${
+        indexes.lastIndex < totalOfRows ? indexes.lastIndex : totalOfRows
+      } of ${totalOfRows} entries`}</p>
     </div>
-  )
+  );
 }
 
 DisplayedRows.propTypes = {
   indexes: PropTypes.object,
-  totalOfRows: PropTypes.number
-}
+  totalOfRows: PropTypes.number,
+};

@@ -54,15 +54,11 @@ export const useTable = (
     }
     if (sortingKey.length > 0 && sorting === "asc") {
       result = result.sort((a, b) =>
-        b[sortingKey]
-          .toString()
-          .localeCompare(a[sortingKey].toString())
+        b[sortingKey].toString().localeCompare(a[sortingKey].toString())
       );
     } else if (sortingKey.length > 0 && sorting === "desc") {
       result = result.sort((a, b) =>
-        a[sortingKey]
-          .toString()
-          .localeCompare(b[sortingKey].toString())
+        a[sortingKey].toString().localeCompare(b[sortingKey].toString())
       );
     }
     setTotalOfRows(currentTotalOfRows);

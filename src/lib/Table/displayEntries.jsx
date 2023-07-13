@@ -1,7 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-const NUMBER_OF_ENTRIES = [10, 25, 50, 100]
+const NUMBER_OF_ENTRIES = [10, 25, 50, 100];
 
 /**
  * React component indicating the extend of data displayed
@@ -18,13 +18,13 @@ export function RowsPerPage({ setRowsPerPage }) {
    * @param {React.ChangeEvent<HTMLSelectElement>} e
    */
   const onChange = (e) => {
-    setRowsPerPage(parseInt(e.target.value))
-  }
+    setRowsPerPage(parseInt(e.target.value));
+  };
 
   return (
-    <div className='flex space-x-2 items-center w-1/6'>
+    <div className="flex space-x-2 items-center w-1/6">
       <p>Show</p>
-      <select name='entries' id='entries' className='input' onChange={onChange}>
+      <select name="entries" id="entries" className="input" onChange={onChange}>
         {NUMBER_OF_ENTRIES.map((number) => (
           <option key={number} value={number}>
             {number}
@@ -33,9 +33,9 @@ export function RowsPerPage({ setRowsPerPage }) {
       </select>
       <p>entries</p>
     </div>
-  )
+  );
 }
 
 RowsPerPage.propTypes = {
-  setRowsPerPage: PropTypes.func
-}
+  setRowsPerPage: PropTypes.func,
+};

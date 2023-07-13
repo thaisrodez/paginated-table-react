@@ -31,11 +31,7 @@ export const getIndexes = (page, rowsPerPage) => {
  * @param {number} rowsPerPage Number of rows displayed per page
  * @returns {Object[]} Data displayed on one page
  */
-export const getSlicedData = (
-  data,
-  page,
-  rowsPerPage
-) => {
+export const getSlicedData = (data, page, rowsPerPage) => {
   const { firstIndex, lastIndex } = getIndexes(page, rowsPerPage);
 
   return data.slice(firstIndex, lastIndex);
@@ -47,10 +43,7 @@ export const getSlicedData = (
  * @param {string} searchInput
  * @returns {boolean} Whether the search input can be found in the item
  */
-export const searchThroughObject = (
-  obj,
-  searchInput
-) => {
+export const searchThroughObject = (obj, searchInput) => {
   const result = [];
   for (const [_, value] of Object.entries(obj)) {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
