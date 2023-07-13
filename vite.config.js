@@ -18,5 +18,14 @@ export default defineConfig({
       }
     }
   },
-  plugins: [react()]
+  plugins: [react()],
+  css: {
+        postcss: {
+            plugins: [
+                require('tailwindcss')({
+                    config: './tailwind.config.js'
+                }),
+             ],
+        }
+    },
 })
